@@ -1,0 +1,130 @@
+
+$green-granny-smith: #acf39d; 
+$pastel-orange: #ffba49;
+$blue-waterspout: #9cfffa;
+$blue-link: #2979ff;
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+	margin: 15px;
+  p {
+    color:white;
+  }
+
+  h1 {
+    @extend p;
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}
+
+.list-title {
+     color: black;
+}
+
+.name {
+     font-weight: bold;
+     font-style: italic;
+}
+
+.list-group {
+    list-style: decimal inside
+  }
+
+.list-group-item {
+  display: list-item;
+  margin: none;
+  }
+
+.item-steps {
+  margin: none;
+  }
+
+.btn-responsive {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#first-list, #second-list, #third-list {
+	 border: 5px solid black;
+	 padding: 10px;
+   background-color: $green-granny-smith;
+   /*margin: 10px;*/
+}
+
+.img-fluid {
+  max-width: 75%; 
+  height: auto;
+}
+
+table {
+			font-size: 18px;
+			margin: 10px;
+}
+
+[target="_blank"] {
+      margin: 10px;
+}
+
+a:link {
+  	   color: $blue-link;
+  	   background-color: transparent;
+  	   text-decoration: none;
+}
+
+a:visited {
+        @extend a:link;
+}
+
+a:hover {
+        @extend a:link;
+        text-decoration: underline;
+}
+
+a:active {
+        @extend a:link;
+}
+
+table {
+      border: 5px solid black;
+      border-collapse: collapse;
+      color: "dark-grey";
+ }
+
+th, td {
+       border: 2px solid black;
+       padding: 10px;
+       text-align: center;
+ }
+
+ td {
+    text-align: center;
+    background-color: white;
+ }
+
+th {
+	text-align: left;
+  background-color: $green-granny-smith;
+ }
+
+@media (min-width: 500px) {
+      .main-title::before {
+          content: "Welcome to My Movies Webpage!";
+      }
+      body {
+          background-color: $pastel-orange;
+      }
+}
+
+@media (max-width: 499px) {
+      .main-title::before {
+          content: "Welcome!";
+      }
+      body {
+          background-color: $blue-waterspout;
+      }
+}

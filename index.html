@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Movies Webpage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div id="intro" class="container">
+		<h1 class="text-center main-title"></h1>
+		<p class="justify-content-left">In this site, you can find several <span class="name">IMDb</span> movie rankings.</p>
+		<p class="justify-content-left">Particularly, there are three different rankings, including the Top Rated Movies, the Top Rated Indian Movies and the Lowest Rated Movies.</p>
+	</div>
+
+	<div class="container">
+    	<ul class="nav nav-tabs nav-justified" role="tablist">
+  			<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#first-list" role="tab" aria-selected="true">Top Rated Movies</a></li>
+  			<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#second-list" role="tab" aria-selected="false">Top Rated Indian Movies</a></li>
+  			<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#third-list" role="tab" aria-selected="false">Lowest Rated Movies</a></li>
+		</ul>
+
+		<div class="tab-content">
+  			<div id="first-list" class="tab-pane fade show active panel panel-default" role="tabpanel">
+				<div class="panel-heading"><h2 class="list-title">Top Rated Movies</h2></div>
+				<div class="panel-body">
+					<ol class="list-group">
+						<a href="list1_film1.html"><li class="list-group-item">The Shawshank Redemption</li></a>
+	            		<a href="list1_film2.html"><li class="list-group-item">The Godfather</li></a>
+	            		<a href="list1_film3.html"><li class="list-group-item">The Godfather: Part II</li></a>
+	            		<a href="list1_film4.html"><li class="list-group-item">The Dark Knight</li></a>
+	            		<a href="list1_film5.html"><li class="list-group-item">12 Angry Men</li></a>
+					</ol>
+					<a class="btn btn-primary btn-responsive" href="https://www.imdb.com/chart/top?ref_=nv_mv_250" target="_blank" role="button"><span class="fas fa-external-link-alt"></span> Go to the complete ranking in <span class="name">IMDb</span></a>
+				</div> 
+  			</div>
+  		
+  			<div id="second-list" class="tab-pane fade panel panel-default" role="tabpanel">
+				<div class="panel-heading"><h2 class="list-title">Top Rated Indian Movies</h2></div>
+				<div class="panel-body">
+					<ol class="list-group">
+						<a href="list2_film1.html"><li class="list-group-item">Anand</li></a>
+						<a href="list2_film2.html"><li class="list-group-item">Drishyam</li></a>
+						<a href="list2_film3.html"><li class="list-group-item">Nayakan</li></a>
+						<a href="list2_film4.html"><li class="list-group-item">Uri: The Surgical Strike</li></a>
+						<a href="list2_film5.html"><li class="list-group-item">Anbe Sivam</li></a>
+					</ol>
+					<a class="btn btn-primary btn-responsive" href="https://www.imdb.com/india/top-rated-indian-movies/?ref_=nv_mv_250_in" target="_blank" role="button"><span class="fas fa-external-link-alt"></span> Go to the complete ranking in <span class="name">IMDb</span></a>
+				</div> 
+			</div>
+  		
+  			<div id="third-list" class="tab-pane fade panel panel-default" role="tabpanel">
+				<div class="panel-heading"><h2 class="list-title">Lowest Rated Movies</h2></div>
+				<div class="panel-body">
+					<ol class="list-group">
+						<a href="list3_film1.html"><li class="list-group-item">Disaster Movie</li></a>
+						<a href="list3_film2.html"><li class="list-group-item">Manos: The Hands of Fate</li></a>
+						<a href="list3_film3.html"><li class="list-group-item">Superbabies: Baby Geniuses 2</li></a>
+						<a href="list3_film4.html"><li class="list-group-item">The Hottie & the Nottie</li></a>
+						<a href="list3_film5.html"><li class="list-group-item">Birdemic: Shock and Terror</li></a>
+					</ol>
+					<a class="btn btn-primary btn-responsive" href="https://www.imdb.com/chart/bottom?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=4da9d9a5-d299-43f2-9c53-f0efa18182cd&pf_rd_r=GTBG3ZS44NFBTSZE0BN0&pf_rd_s=right-4&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_ql_8" target="_blank" role="button"><span class="fas fa-external-link-alt"></span> Go to the complete ranking in <span class="name">IMDb</span></a>
+				</div> 
+			</div>
+		</div>
+	</div>
+</body>
+</html>
